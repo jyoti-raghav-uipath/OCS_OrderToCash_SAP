@@ -1,0 +1,1838 @@
+﻿{
+  "DataContractVersion": "1.1",
+  "DocumentTypes": [
+    {
+      "DocumentTypeId": "UiPath.General.Receipt",
+      "Group": "UiPath",
+      "Category": "General",
+      "Name": "Receipt",
+      "OptionalUniqueIdentifier": null,
+      "TypeField": {
+        "FieldId": "UiPath.General.Receipt.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "UiPath.General.Receipt.ReceiptDate",
+          "FieldName": "Receipt Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.Receipt.ReceiptName",
+          "FieldName": "Receipt Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.Receipt.VendorAddress",
+          "FieldName": "Vendor Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.Receipt.PhoneNr",
+          "FieldName": "Phone No.",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.Receipt.ExpenseType",
+          "FieldName": "Expense Type",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.Receipt.Tax",
+          "FieldName": "Tax Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.Receipt.TotalValue",
+          "FieldName": "Total Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.Receipt.Currency",
+          "FieldName": "Currency",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.Receipt.Items",
+          "FieldName": "Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "UiPath.General.Receipt.Items.Description",
+              "FieldName": "Description",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "UiPath.General.Receipt.Items.Qty",
+              "FieldName": "Qty.",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "UiPath.General.Receipt.Items.UnitPrice",
+              "FieldName": "Unit Price",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "UiPath.General.Receipt.Items.Amount",
+              "FieldName": "Amount",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            }
+          ],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "UiPath.General.Invoice",
+      "Group": "UiPath",
+      "Category": "General",
+      "Name": "Invoice",
+      "OptionalUniqueIdentifier": null,
+      "TypeField": {
+        "FieldId": "UiPath.General.Invoice.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "UiPath.General.Invoice.InvoiceNo",
+          "FieldName": "Invoice No.",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.General.Invoice.Date",
+          "FieldName": "Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "Month,Day,Year",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.General.Invoice.Name",
+          "FieldName": "Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.General.Invoice.VendorAddress",
+          "FieldName": "Vendor Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.General.Invoice.ShippingAddress",
+          "FieldName": "Shipping Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.General.Invoice.ShippingCharges",
+          "FieldName": "Shipping Charges",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.General.Invoice.BillingName",
+          "FieldName": "Billing Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.General.Invoice.BillingAddress",
+          "FieldName": "Billing Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.General.Invoice.PONo",
+          "FieldName": "PO No.",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.General.Invoice.Currency",
+          "FieldName": "Currency",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.General.Invoice.NetAmount",
+          "FieldName": "Net Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.General.Invoice.TaxAmount",
+          "FieldName": "Tax Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.General.Invoice.Total",
+          "FieldName": "Total Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.General.Invoice.PaymentTerms",
+          "FieldName": "Payment Terms",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.General.Invoice.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.General.Invoice.Items",
+          "FieldName": "Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "UiPath.General.Invoice.Items.LineNo",
+              "FieldName": "Line No.",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [
+                {
+                  "Key": "RequiresReference",
+                  "Value": "true"
+                }
+              ]
+            },
+            {
+              "FieldId": "UiPath.General.Invoice.Items.Description",
+              "FieldName": "Description",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [
+                {
+                  "Key": "RequiresReference",
+                  "Value": "true"
+                }
+              ]
+            },
+            {
+              "FieldId": "UiPath.General.Invoice.Items.Qty",
+              "FieldName": "Qty",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [
+                {
+                  "Key": "RequiresReference",
+                  "Value": "true"
+                }
+              ]
+            },
+            {
+              "FieldId": "UiPath.General.Invoice.Items.UnitPrice",
+              "FieldName": "Unit Price",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [
+                {
+                  "Key": "RequiresReference",
+                  "Value": "true"
+                }
+              ]
+            },
+            {
+              "FieldId": "UiPath.General.Invoice.Items.Amount",
+              "FieldName": "Amount",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [
+                {
+                  "Key": "RequiresReference",
+                  "Value": "true"
+                }
+              ]
+            },
+            {
+              "FieldId": "UiPath.General.Invoice.Items.LinePoNo",
+              "FieldName": "Line Po. No.",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": [
+                {
+                  "Key": "RequiresReference",
+                  "Value": "true"
+                }
+              ]
+            }
+          ],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "UiPath.General.PurchaseOrders",
+      "Group": "UiPath",
+      "Category": "General",
+      "Name": "PurchaseOrder",
+      "OptionalUniqueIdentifier": null,
+      "TypeField": {
+        "FieldId": "UiPath.General.PurchaseOrders.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Po-number",
+          "FieldName": "Po-number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Date",
+          "FieldName": "Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Client-name",
+          "FieldName": "Client-name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Client-address",
+          "FieldName": "Client-address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Vendor-name",
+          "FieldName": "Vendor-name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Vendor-address",
+          "FieldName": "Vendor-address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Shipping-name",
+          "FieldName": "Shipping-name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Shipping-address",
+          "FieldName": "Shipping-address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Billing-name",
+          "FieldName": "Billing-name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Billing-address",
+          "FieldName": "Billing-address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Payment-terms",
+          "FieldName": "Payment-terms",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Delivery-by-date",
+          "FieldName": "Delivery-by-date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Discount",
+          "FieldName": "Discount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Net-amount",
+          "FieldName": "Net-amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Tax-amount",
+          "FieldName": "Tax-amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Tax-rate",
+          "FieldName": "Tax-rate",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Total-amount",
+          "FieldName": "Total-amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Currency",
+          "FieldName": "Currency",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PurchaseOrders.Items",
+          "FieldName": "Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "UiPath.General.PurchaseOrders.Items.Line-number",
+              "FieldName": "Line No.",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "UiPath.General.PurchaseOrders.Items.Description",
+              "FieldName": "Description",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "UiPath.General.PurchaseOrders.Items.Product-code",
+              "FieldName": "Product Code",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "UiPath.General.PurchaseOrders.Items.Delivery-date",
+              "FieldName": "Delivery Date",
+              "IsMultiValue": false,
+              "Type": "Date",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "UiPath.General.PurchaseOrders.Items.Quantity",
+              "FieldName": "Quantity",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "UiPath.General.PurchaseOrders.Items.Unit-measure",
+              "FieldName": "Unit of Measure",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "UiPath.General.PurchaseOrders.Items.Unit-price",
+              "FieldName": "Unit Price",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "UiPath.General.PurchaseOrders.Items.Line-net-amount",
+              "FieldName": "Line Net Amount",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "UiPath.General.PurchaseOrders.Items.Line-tax-rate",
+              "FieldName": "Line Tax Rate",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "UiPath.General.PurchaseOrders.Items.Line-tax-amount",
+              "FieldName": "Line Tax Amount",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "UiPath.General.PurchaseOrders.Items.Line-amount",
+              "FieldName": "Line Amount",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            }
+          ],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "UiPath.Energy.UtilityBills",
+      "Group": "UiPath",
+      "Category": "Energy",
+      "Name": "UtilityBills",
+      "OptionalUniqueIdentifier": null,
+      "TypeField": {
+        "FieldId": "UiPath.Energy.UtilityBillsDocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "UiPath.Energy.UtilityBills.billing-name",
+          "FieldName": "Billing-name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Energy.UtilityBills.billing-address",
+          "FieldName": "Billing-address",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Energy.UtilityBills.vendor-name",
+          "FieldName": "Vendor-name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Energy.UtilityBills.vendor-address",
+          "FieldName": "Vendor-address",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Energy.UtilityBills.account-number",
+          "FieldName": "Account-number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Energy.UtilityBills.invoice-number",
+          "FieldName": "Invoice-number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Energy.UtilityBills.total-amount",
+          "FieldName": "Total-amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Energy.UtilityBills.invoice-date",
+          "FieldName": "Invoice-date",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Energy.UtilityBills.due-date",
+          "FieldName": "Due-date",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Energy.UtilityBills.payment-address",
+          "FieldName": "Payment-address",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Energy.UtilityBills.service-from-date",
+          "FieldName": "Service-from-date",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Energy.UtilityBills.service-to-date",
+          "FieldName": "Service-to-date",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Energy.UtilityBills.payment-terms",
+          "FieldName": "Payment-terms",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Energy.UtilityBills.previous-balance",
+          "FieldName": "Previous-balance",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Energy.UtilityBills.document_type",
+          "FieldName": "Document_type",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "UiPath.General.Statement",
+      "Group": "UiPath",
+      "Category": "General",
+      "Name": "Statement",
+      "OptionalUniqueIdentifier": null,
+      "TypeField": {
+        "FieldId": "UiPath.General.StatementDocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "UiPath.General.Statement.name",
+          "FieldName": "Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.Statement.date",
+          "FieldName": "Date",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "(Month, Day, Year)",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.Statement.total",
+          "FieldName": "Total",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.Statement.items",
+          "FieldName": "Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "UiPath.General.Statement.items.Body.description",
+              "FieldName": "PO",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "UiPath.General.Statement.items.Body.line-amount",
+              "FieldName": "Balance",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            }
+          ],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "UiPath.General.PaymentAdvice",
+      "Group": "UiPath",
+      "Category": "General",
+      "Name": "PaymentAdvice",
+      "OptionalUniqueIdentifier": null,
+      "TypeField": {
+        "FieldId": "UiPath.General.PaymentAdviceDocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "UiPath.General.PaymentAdvice.name",
+          "FieldName": "Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PaymentAdvice.date",
+          "FieldName": "Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.PaymentAdvice.items",
+          "FieldName": "Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "UiPath.General.PaymentAdvice.items.Body.description",
+              "FieldName": "Reference",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "UiPath.General.PaymentAdvice.items.Body.line-amount",
+              "FieldName": "Amount",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            }
+          ],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "UiPath.Specific.SEPA-Form",
+      "Group": "UiPath",
+      "Category": "Specific",
+      "Name": "Handwritten - SEPA Form",
+      "OptionalUniqueIdentifier": null,
+      "TypeField": {
+        "FieldId": "UiPath.Specific.SEPA-Form.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "UiPath.Specific.SEPA-Form.ReceiverName",
+          "FieldName": "Receiver Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.SEPA-Form.ReceiverIBAN",
+          "FieldName": "Receiver IBAN",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.SEPA-Form.SenderBIC",
+          "FieldName": "Receiver BIC",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.SEPA-Form.Amount",
+          "FieldName": "Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.SEPA-Form.Referenz",
+          "FieldName": "Referenz",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.SEPA-Form.SenderName",
+          "FieldName": "Sender Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.SEPA-Form.SenderIBAN",
+          "FieldName": "Sender IBAN",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.SEPA-Form.Date",
+          "FieldName": "Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.SEPA-Form.Signature",
+          "FieldName": "Signature Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.SEPA-Form.Signatureexist",
+          "FieldName": "Signature exist?",
+          "IsMultiValue": true,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "UiPath.Specific.Handwritten-ImmigrationDeclZimbabwe",
+      "Group": "UiPath",
+      "Category": "Specific",
+      "Name": "Handwritten - Immigration Decl. Zimbabwe",
+      "OptionalUniqueIdentifier": null,
+      "TypeField": {
+        "FieldId": "UiPath.Specific.Handwritten-ImmigrationDeclZimbabwe.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "UiPath.Specific.Handwritten-ImmigrationDeclZimbabwe.FirstName",
+          "FieldName": "First Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Handwritten-ImmigrationDeclZimbabwe.LastName",
+          "FieldName": "Last Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Handwritten-ImmigrationDeclZimbabwe.DateofBirth",
+          "FieldName": "Date of Birth",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Handwritten-ImmigrationDeclZimbabwe.Gender-Male",
+          "FieldName": "Gender - Male",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Handwritten-ImmigrationDeclZimbabwe.Gender-Female",
+          "FieldName": "Gender - Female",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Handwritten-ImmigrationDeclZimbabwe.MartialStatus-Single",
+          "FieldName": "Martial Status - Single",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Handwritten-ImmigrationDeclZimbabwe.MartialStatus-Married",
+          "FieldName": "Martial Status - Married",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Handwritten-ImmigrationDeclZimbabwe.Nationality",
+          "FieldName": "Nationality",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Handwritten-ImmigrationDeclZimbabwe.PassportNo",
+          "FieldName": "Passport No.",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Handwritten-ImmigrationDeclZimbabwe.PassportDateofExpiry",
+          "FieldName": "Passport Date of Expiry",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Handwritten-ImmigrationDeclZimbabwe.NumberofDaysstaing",
+          "FieldName": "Number of Days staing",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Handwritten-ImmigrationDeclZimbabwe.Signature",
+          "FieldName": "Signature",
+          "IsMultiValue": true,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "UiPath.General.ServiceRequest",
+      "Group": "UiPath",
+      "Category": "General",
+      "Name": "Service Request",
+      "OptionalUniqueIdentifier": null,
+      "TypeField": {
+        "FieldId": "UiPath.General.ServiceRequest.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "UiPath.General.ServiceRequest.Company",
+          "FieldName": "Company",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.General.ServiceRequest.Account-Number",
+          "FieldName": "Account-Number",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "UiPath.Specific.Covid-CH",
+      "Group": "UiPath",
+      "Category": "Specific",
+      "Name": "Covid-CH",
+      "OptionalUniqueIdentifier": null,
+      "TypeField": {
+        "FieldId": "UiPath.Specific.Covid-CH.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "UiPath.Specific.Covid-CH.Familienname",
+          "FieldName": "Familienname",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Covid-CH.Vorname",
+          "FieldName": "Vorname",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Covid-CH.Geburtsdatum",
+          "FieldName": "Geburtsdatum",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Covid-CH.Männlich",
+          "FieldName": "Männlich?",
+          "IsMultiValue": true,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Covid-CH.Weiblich",
+          "FieldName": "Weiblich?",
+          "IsMultiValue": true,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Covid-CH.Strasse",
+          "FieldName": "Strasse",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Covid-CH.PLZ&Wohnort",
+          "FieldName": "PLZ & Wohnort",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Covid-CH.SchweizerNationalität",
+          "FieldName": "Schweizer Nationalität?",
+          "IsMultiValue": true,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Covid-CH.Bemerkungen",
+          "FieldName": "Bemerkungen",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Covid-CH.UnterschriftArzt",
+          "FieldName": "Unterschrift Arzt",
+          "IsMultiValue": true,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "UiPath.Specific.Covid-CH.UnterschriftArztName",
+          "FieldName": "Unterschrift Arzt Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "UiPath.Specific.Worktimes-Chinese",
+      "Group": "UiPath",
+      "Category": "Specific",
+      "Name": "Worktimes-Chinese",
+      "OptionalUniqueIdentifier": null,
+      "TypeField": {
+        "FieldId": "UiPath.Specific.Worktimes-Chinese.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "UiPath.Specific.Worktimes-Chinese.month",
+          "FieldName": "month",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.Specific.Worktimes-Chinese.department",
+          "FieldName": "department",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.Specific.Worktimes-Chinese.name",
+          "FieldName": "name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.Specific.Worktimes-Chinese.start-1",
+          "FieldName": "start-1",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.Specific.Worktimes-Chinese.end-1",
+          "FieldName": "end-1",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.Specific.Worktimes-Chinese.total-1",
+          "FieldName": "total-1",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.Specific.Worktimes-Chinese.attendance",
+          "FieldName": "attendance",
+          "IsMultiValue": true,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.Specific.Worktimes-Chinese.shift-1",
+          "FieldName": "shift-1",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.Specific.Worktimes-Chinese.leave-1",
+          "FieldName": "leave-1",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.Specific.Worktimes-Chinese.remark-1",
+          "FieldName": "remark-1",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.Specific.Worktimes-Chinese.ow-workingday",
+          "FieldName": "ow-workingday",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.Specific.Worktimes-Chinese.ow-weekend",
+          "FieldName": "ow-weekend",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "UiPath.Specific.Worktimes-Chinese.signature",
+          "FieldName": "signature",
+          "IsMultiValue": true,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Groups": [
+    {
+      "Name": "UiPath",
+      "Categories": [
+        "Energy",
+        "General",
+        "Specific"
+      ]
+    }
+  ],
+  "SupportedLanguages": [
+    {
+      "Name": "Undetermined Language",
+      "Code": "und"
+    },
+    {
+      "Name": "Bulgarian",
+      "Code": "bul"
+    },
+    {
+      "Name": "Cantonese",
+      "Code": "yue"
+    },
+    {
+      "Name": "Danish",
+      "Code": "dan"
+    },
+    {
+      "Name": "Dutch",
+      "Code": "nld"
+    },
+    {
+      "Name": "English",
+      "Code": "eng"
+    },
+    {
+      "Name": "French",
+      "Code": "fra"
+    },
+    {
+      "Name": "Georgian",
+      "Code": "kat"
+    },
+    {
+      "Name": "German",
+      "Code": "deu"
+    },
+    {
+      "Name": "Greek",
+      "Code": "ell"
+    },
+    {
+      "Name": "Hebrew",
+      "Code": "heb"
+    },
+    {
+      "Name": "Hindi",
+      "Code": "hin"
+    },
+    {
+      "Name": "Italian",
+      "Code": "ita"
+    },
+    {
+      "Name": "Japanese",
+      "Code": "jpn"
+    },
+    {
+      "Name": "Korean",
+      "Code": "kor"
+    },
+    {
+      "Name": "Macedonian",
+      "Code": "mkd"
+    },
+    {
+      "Name": "Mandarin",
+      "Code": "zho"
+    },
+    {
+      "Name": "Marathi",
+      "Code": "mar"
+    },
+    {
+      "Name": "Norwegian",
+      "Code": "nor"
+    },
+    {
+      "Name": "Polish",
+      "Code": "pol"
+    },
+    {
+      "Name": "Portuguese",
+      "Code": "por"
+    },
+    {
+      "Name": "Romanian",
+      "Code": "ron"
+    },
+    {
+      "Name": "Russian",
+      "Code": "rus"
+    },
+    {
+      "Name": "Serbian",
+      "Code": "srp"
+    },
+    {
+      "Name": "Spanish",
+      "Code": "spa"
+    },
+    {
+      "Name": "Swedish",
+      "Code": "swe"
+    },
+    {
+      "Name": "Telugu",
+      "Code": "tel"
+    }
+  ]
+}
